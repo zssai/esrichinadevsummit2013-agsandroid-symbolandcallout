@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RadioGroup android:id="@+id/drawoptions" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <RadioButton android:id="@+id/symboldraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dip"
+            android:text="符号渲染"
+            android:paddingRight="45dip" />
+        <RadioButton android:id="@+id/renderdraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dip"
+            android:text="渲染器渲染" />
+    </RadioGroup>
+    <com.esri.android.map.MapView 
+        android:id="@+id/mapstreet"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        initExtent = "-32013050.43827587, -18070936.479063474, 46180195.00876002, 22004080.20650447">        
+    </com.esri.android.map.MapView>
+
+</LinearLayout>
